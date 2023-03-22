@@ -98,7 +98,9 @@ const RegistrationScreen = () => {
               style={styles.showPass}
               onPress={() => setSecureState(!secureState)}
             >
-              <Text style={styles.showPassText}>Show</Text>
+              <Text style={styles.showPassText}>
+                {secureState ? "Show" : "Hide"}
+              </Text>
             </TouchableOpacity>
           </View>
 
